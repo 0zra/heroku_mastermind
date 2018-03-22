@@ -11,6 +11,13 @@
           margin: auto;
           color: rgb(53,59,126);
         }
+        span {
+          width: 40px;
+          height: 40px;
+          border-radius: 25px;
+          margin-left:50px;
+           padding: 10px 20px;
+        }
         </style>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" type="text/css">
@@ -18,7 +25,54 @@
   </head>
   <body>
     <h1>Matermind</h1>
-    <form>
+    <p > <%= "<span style='background-color:#{choice[0]};margin-left:375px;'></span>" %>
+          <%= "<span style='background-color:#{choice[1]};'></span>" %>
+          <%= "<span style='background-color:#{choice[2]};'></span>" %>
+          <%= "<span style='background-color:#{choice[3]};'></span>" %></p>
+
+    <form style="margin-left:350px;">
+      <select name="first">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="brown">Brown</option>
+        <option value="orange">Orange</option>
+      </select>
+      <select name="second">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="brown">Brown</option>
+        <option value="orange">Orange</option>
+      </select>
+      <select name="third">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="brown">Brown</option>
+        <option value="orange">Orange</option>
+      </select>
+      <select name="fourth">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="brown">Brown</option>
+        <option value="orange">Orange</option>
+      </select>
+    </br>
+      <input type='submit' value="Guess!"style="width: 370px;" />
     </form>
   </body>
 </html>
