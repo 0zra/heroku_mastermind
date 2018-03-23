@@ -13,6 +13,11 @@ set :game, Library.generate_code
 set :numerator, 0
 set :print, ""
 before do
+
+
+end
+
+get '/' do
   @helper = []
   @helper <<params['first']
   @helper <<params['second']
@@ -25,17 +30,15 @@ before do
             <span style='background-color:#{params['second']};'></span>
             <span style='background-color:#{params['third']};'></span>
             <span style='background-color:#{params['fourth']};'></span>
-              Colors quessed:#{h1} , Hits:#{h2}</p>"
-
-end
-
-get '/' do
+              Colors quessed:#{h1} , Hits:#{h2}</p> <br>"
   @session = session
   settings.numerator+=1
   erb :index, :locals => {:choice => settings.print}
+
 end
 
 after '/' do
+
   halt 401, 'You\'ve won!' if @helper == settings.game
   halt "You've lost!" if settings.numerator == 12
 end
