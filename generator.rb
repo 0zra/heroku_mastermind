@@ -20,14 +20,14 @@ module Library
 
   def self.converter int
     case int
-      when 1 then "Red"
-      when 2 then "Green"
-      when 3 then "Blue"
-      when 4 then "Yellow"
-      when 5 then "Black"
-      when 6 then "White"
-      when 7 then "Brown"
-      when 8 then "Orange"
+      when 1 then "red"
+      when 2 then "green"
+      when 3 then "blue"
+      when 4 then "yellow"
+      when 5 then "black"
+      when 6 then "white"
+      when 7 then "brown"
+      when 8 then "orange"
     end
   end
 end
